@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife - Tu gimnasio, tu estilo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header con navegación fija -->
+    <header>
+        <nav>
+            <div class="logo">💪 FitLife</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#rutinas">Rutinas</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#inscripcion">Inscripción</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Transforma tu cuerpo, transforma tu vida</h1>
+            <p>Entrena con los mejores planes y rutinas personalizadas</p>
+            <a href="#inscripcion" class="cta-button">Únete ahora</a>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="servicios" id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-grid">
+            <article class="servicio-card">
+                <div class="servicio-icon">🏋️‍♂️</div>
+                <h3>Entrenamiento Personal</h3>
+                <p>Sesiones 1 a 1 con entrenadores certificados que te guiarán a cumplir tus objetivos.</p>
+            </article>
+            <article class="servicio-card">
+                <div class="servicio-icon">🤸‍♀️</div>
+                <h3>Clases Grupales</h3>
+                <p>Zumba, HIIT, yoga y más. Energía en equipo, resultados garantizados.</p>
+            </article>
+            <article class="servicio-card">
+                <div class="servicio-icon">🥗</div>
+                <h3>Asesoría Nutricional</h3>
+                <p>Planes de alimentación diseñados para complementar tu entrenamiento.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Rutinas -->
+    <section class="galeria" id="rutinas">
+        <h2>Rutinas Populares</h2>
+        <div class="galeria-grid">
+            <div class="galeria-item"><span>Fuerza Total</span></div>
+            <div class="galeria-item"><span>Cardio Intenso</span></div>
+            <div class="galeria-item"><span>Yoga & Flexibilidad</span></div>
+            <div class="galeria-item"><span>Cross Training</span></div>
+            <div class="galeria-item"><span>Full Body</span></div>
+            <div class="galeria-item"><span>Glúteos & Piernas</span></div>
+        </div>
+    </section>
+
+    <!-- Planes -->
+    <section class="precios" id="planes">
+        <h2>Planes de Membresía</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mensual</td>
+                    <td>Acceso ilimitado al gimnasio + clases grupales</td>
+                    <td>64.000 pesos</td>
+                </tr>
+                <tr>
+                    <td>Trimestral</td>
+                    <td>Incluye asesoría nutricional</td>
+                    <td>200.000 pesos</td>
+                </tr>
+                <tr>
+                    <td>Anual</td>
+                    <td>Entrenamiento personalizado + acceso VIP</td>
+                    <td>1.000.000 pesos</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Inscripción -->
+    <section class="especiales" id="inscripcion">
+        <h2>Promociones de Inscripción</h2>
+        <div class="especiales-lista">
+            <h3>Ofertas:</h3>
+            <ul>
+                <li>Inscríbete este mes y recibe 1 semana gratis</li>
+                <li>Plan anual: camiseta oficial FitLife incluida</li>
+                <li>Trae un amigo y obtén 20% de descuento</li>
+                <li>Clases grupales ilimitadas en el plan trimestral</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contacto" id="contacto">
+        <h2>Contáctanos</h2>
+        <form onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Tu número de teléfono">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos qué necesitas..."></textarea>
+            </div>
+            <button type="submit" class="submit-button">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FitLife Gym</h3>
+                <p>Entrenando contigo desde 2015. Tu mejor versión empieza aquí.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horarios</h3>
+                <p>Lunes a Domingo<br>6:00 AM - 10:00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📞 Teléfono: (555) 987-6543<br>📧 Email: info@fitlife.com<br>📍 Av. Principal #45</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#">f</a>
+                    <a href="#">📷</a>
+                    <a href="#">🐦</a>
+                    <a href="#">💬</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FitLife Gym. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
